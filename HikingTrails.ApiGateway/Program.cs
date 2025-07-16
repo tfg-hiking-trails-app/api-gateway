@@ -1,3 +1,4 @@
+using HikingTrails.ApiGateway.Extensions;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 
@@ -7,9 +8,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddJwtBearer();
 
-builder.Configuration.AddJsonFile("ocelot.json", optional: false, reloadOnChange: true);
-builder.Services.AddOcelot();
+builder.Configuration
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddOcelot("Ocelot", builder.Environment, MergeOcelotJson.ToMemory)
+    .AddEnvironmentVariables();
+
+builder.Services.AddOcelot(builder.Configuration);
 
 var app = builder.Build();
 
@@ -20,7 +26,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// Middleware
 await app.UseOcelot();
 
 app.UseAuthorization();
