@@ -17,6 +17,8 @@ builder.Configuration
 
 builder.Services.AddOcelot(builder.Configuration);
 
+var myAllowSpecificOrigins = builder.Services.AddAllowSpecificOrigins();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -27,6 +29,8 @@ if (app.Environment.IsDevelopment())
 }
 
 await app.UseOcelot();
+
+app.UseCors(myAllowSpecificOrigins);
 
 app.UseAuthorization();
 app.MapControllers();

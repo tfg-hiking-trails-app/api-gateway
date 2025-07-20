@@ -33,4 +33,25 @@ public static class ServiceCollectionExtension
                 };
             });
     }
+
+    public static string AddAllowSpecificOrigins(this IServiceCollection services)
+    {
+        string? allowedOrigins = Environment.GetEnvironmentVariable("ALLOWED_ORIGINS");
+        
+        if (!string.IsNullOrEmpty(allowedOrigins))
+            throw new Exception("Allowed origins are not configured");
+        
+        string myAllowSpecificOrigins = "_myAllowSpecificOrigins";
+        
+        services.AddCors(options =>
+        {
+            options.AddPolicy(name: myAllowSpecificOrigins,
+                policy =>
+                {
+                    policy.WithOrigins(allowedOrigins!);
+                });
+        });
+        
+        return myAllowSpecificOrigins;
+    }
 }
