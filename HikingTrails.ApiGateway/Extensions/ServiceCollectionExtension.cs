@@ -36,10 +36,12 @@ public static class ServiceCollectionExtension
 
     public static string AddAllowSpecificOrigins(this IServiceCollection services)
     {
-        string? allowedOrigins = Environment.GetEnvironmentVariable("ALLOWED_ORIGINS");
+        string? allowedOriginsStr = Environment.GetEnvironmentVariable("ALLOW_SPECIFIC_ORIGINS");
         
-        if (!string.IsNullOrEmpty(allowedOrigins))
+        if (string.IsNullOrEmpty(allowedOriginsStr))
             throw new Exception("Allowed origins are not configured");
+        
+        string[] allowedOrigins = allowedOriginsStr.Split(',');
         
         string myAllowSpecificOrigins = "_myAllowSpecificOrigins";
         
@@ -48,7 +50,7 @@ public static class ServiceCollectionExtension
             options.AddPolicy(name: myAllowSpecificOrigins,
                 policy =>
                 {
-                    policy.WithOrigins(allowedOrigins!);
+                    policy.WithOrigins(allowedOrigins);
                 });
         });
         
