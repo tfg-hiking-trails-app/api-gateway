@@ -41,19 +41,22 @@ public static class ServiceCollectionExtension
         if (string.IsNullOrEmpty(allowedOriginsStr))
             throw new Exception("Allowed origins are not configured");
         
-        string[] allowedOrigins = allowedOriginsStr.Split(',');
+        string[] allowedOrigins = allowedOriginsStr.Split(',', 
+            StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
         
-        string myAllowSpecificOrigins = "_myAllowSpecificOrigins";
+        string policyName = "_myAllowSpecificOrigins";
         
         services.AddCors(options =>
         {
-            options.AddPolicy(name: myAllowSpecificOrigins,
-                policy =>
-                {
-                    policy.WithOrigins(allowedOrigins);
-                });
+            options.AddPolicy(name: policyName, policy =>
+            {
+                policy
+                    .WithOrigins(allowedOrigins)
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();;
+            });
         });
         
-        return myAllowSpecificOrigins;
+        return policyName;
     }
 }

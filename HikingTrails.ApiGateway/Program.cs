@@ -15,9 +15,10 @@ builder.Configuration
     .AddOcelot("Ocelot", builder.Environment, MergeOcelotJson.ToMemory)
     .AddEnvironmentVariables();
 
-builder.Services.AddOcelot(builder.Configuration);
 
 var myAllowSpecificOrigins = builder.Services.AddAllowSpecificOrigins();
+
+builder.Services.AddOcelot(builder.Configuration);
 
 var app = builder.Build();
 
@@ -28,9 +29,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-await app.UseOcelot();
-
 app.UseCors(myAllowSpecificOrigins);
+
+await app.UseOcelot();
 
 app.UseAuthorization();
 app.MapControllers();
