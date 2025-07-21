@@ -22,10 +22,7 @@
           "Port": 8080
         }
       ],
-      "DownstreamPathTemplate": "/api/auth/refresh",
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer"
-      }
+      "DownstreamPathTemplate": "/api/auth/refresh"
     }
   ]
 }
