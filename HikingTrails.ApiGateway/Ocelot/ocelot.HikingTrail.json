@@ -14,6 +14,51 @@
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
       }
+    },
+    {
+      "UpstreamPathTemplate": "/api/difficulty-level/",
+      "UpstreamHttpMethod": [ "GET", "POST", "PATCH", "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/difficulty-level/",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/health-metrics/",
+      "UpstreamHttpMethod": [ "GET", "POST", "PATCH", "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/health-metrics/",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/hiking-trail/",
+      "UpstreamHttpMethod": [ "GET", "POST", "PATCH", "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/hiking-trail/",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
     }
   ]
 }
