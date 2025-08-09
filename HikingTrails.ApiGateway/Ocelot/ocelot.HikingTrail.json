@@ -16,8 +16,38 @@
       }
     },
     {
+      "UpstreamPathTemplate": "/api/hiking-trail/",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/hiking-trail/",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/hiking-trail/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PATCH", "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/hiking-trail/{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
       "UpstreamPathTemplate": "/api/difficulty-level/",
-      "UpstreamHttpMethod": [ "GET", "POST", "PATCH", "DELETE" ],
+      "UpstreamHttpMethod": [ "GET", "POST" ],
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -31,8 +61,8 @@
       }
     },
     {
-      "UpstreamPathTemplate": "/api/health-metrics/",
-      "UpstreamHttpMethod": [ "GET", "POST", "PATCH", "DELETE" ],
+      "UpstreamPathTemplate": "/api/difficulty-level/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PATCH", "DELETE" ],
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -40,14 +70,14 @@
           "Port": 8080
         }
       ],
-      "DownstreamPathTemplate": "/api/health-metrics/",
+      "DownstreamPathTemplate": "/api/difficulty-level/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
       }
     },
     {
-      "UpstreamPathTemplate": "/api/hiking-trail/",
-      "UpstreamHttpMethod": [ "GET", "POST", "PATCH", "DELETE" ],
+      "UpstreamPathTemplate": "/api/metrics/",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -55,7 +85,82 @@
           "Port": 8080
         }
       ],
-      "DownstreamPathTemplate": "/api/hiking-trail/",
+      "DownstreamPathTemplate": "/api/metrics/",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/metrics/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PATCH", "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/metrics/{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/terrain-type/",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/terrain-type/",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/terrain-type/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PATCH", "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/terrain-type/{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/trail-type/",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/trail-type/",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/trail-type/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PATCH", "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/trail-type/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
       }
