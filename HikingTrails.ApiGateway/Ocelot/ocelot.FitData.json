@@ -1,0 +1,94 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/fit-file-data/file-id/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "fit-data-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/fit-file-data/file-id/{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/fit-file-data/activity/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "fit-data-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/fit-file-data/activity/{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/fit-file-data/sessions/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "fit-data-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/fit-file-data/sessions/{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/fit-file-data/laps/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "fit-data-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/fit-file-data/laps/{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/fit-file-data/records/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "fit-data-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/fit-file-data/records/{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/fit-file-data/records/{everything}/{resource}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "fit-data-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/fit-file-data/records/{everything}/{resource}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    }
+  ]
+}
