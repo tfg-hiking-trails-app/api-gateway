@@ -32,7 +32,7 @@
     },
     {
       "UpstreamPathTemplate": "/api/hiking-trail/{everything}",
-      "UpstreamHttpMethod": [ "GET", "PATCH", "DELETE" ],
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -62,7 +62,7 @@
     },
     {
       "UpstreamPathTemplate": "/api/difficulty-level/{everything}",
-      "UpstreamHttpMethod": [ "GET", "PATCH", "DELETE" ],
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -92,7 +92,7 @@
     },
     {
       "UpstreamPathTemplate": "/api/metrics/{everything}",
-      "UpstreamHttpMethod": [ "GET", "PATCH", "DELETE" ],
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -122,7 +122,7 @@
     },
     {
       "UpstreamPathTemplate": "/api/terrain-type/{everything}",
-      "UpstreamHttpMethod": [ "GET", "PATCH", "DELETE" ],
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -152,7 +152,7 @@
     },
     {
       "UpstreamPathTemplate": "/api/trail-type/{everything}",
-      "UpstreamHttpMethod": [ "GET", "PATCH", "DELETE" ],
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
