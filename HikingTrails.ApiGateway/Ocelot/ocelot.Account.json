@@ -106,6 +106,21 @@
       }
     },
     {
+      "UpstreamPathTemplate": "/api/account-follow/followers/{everything}/all",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "account-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/account-follow/followers/{everything}/all",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
       "UpstreamPathTemplate": "/api/account-follow/followed/{everything}",
       "UpstreamHttpMethod": [ "GET" ],
       "DownstreamScheme": "http",
@@ -116,6 +131,21 @@
         }
       ],
       "DownstreamPathTemplate": "/api/account-follow/followed/{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/account-follow/followed/{everything}/all",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "account-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/account-follow/followed/{everything}/all",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
       }

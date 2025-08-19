@@ -31,6 +31,21 @@
       }
     },
     {
+      "UpstreamPathTemplate": "/api/hiking-trail/account-codes",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/hiking-trail/account-codes",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
       "UpstreamPathTemplate": "/api/hiking-trail/{everything}",
       "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
       "DownstreamScheme": "http",
