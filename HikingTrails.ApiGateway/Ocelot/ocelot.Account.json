@@ -17,7 +17,7 @@
     },
     {
       "UpstreamPathTemplate": "/api/gender/{everything}",
-      "UpstreamHttpMethod": [ "GET", "PATCH", "DELETE" ],
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -47,7 +47,7 @@
     },
     {
       "UpstreamPathTemplate": "/api/account/{everything}",
-      "UpstreamHttpMethod": [ "GET", "PATCH" ],
+      "UpstreamHttpMethod": [ "GET", "PUT" ],
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -77,7 +77,7 @@
     },
     {
       "UpstreamPathTemplate": "/api/account-follow/{everything}",
-      "UpstreamHttpMethod": [ "GET", "PATCH", "DELETE" ],
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
