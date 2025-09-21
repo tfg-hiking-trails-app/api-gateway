@@ -194,6 +194,96 @@
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
       }
+    },
+    {
+      "UpstreamPathTemplate": "/api/images/",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/images/",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/images/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/images/{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/prestige/",
+      "UpstreamHttpMethod": [ "GET", "POST", "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/prestige/",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/prestige/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/prestige/{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/comment/",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/comment/",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/comment/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/comment/{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
     }
   ]
 }
