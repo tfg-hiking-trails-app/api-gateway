@@ -181,7 +181,7 @@
       }
     },
     {
-      "UpstreamPathTemplate": "/api/hiking-trail/searcher/{everything}",
+      "UpstreamPathTemplate": "/api/hiking-trail/searcher",
       "UpstreamHttpMethod": [ "GET" ],
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -190,10 +190,22 @@
           "Port": 8080
         }
       ],
-      "DownstreamPathTemplate": "/api/hiking-trail/searcher/{everything}",
+      "DownstreamPathTemplate": "/api/hiking-trail/searcher",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
       }
+    },
+    {
+      "UpstreamPathTemplate": "/api/hiking-trail/newest",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/hiking-trail/newest"
     },
     {
       "UpstreamPathTemplate": "/api/images/",
