@@ -6,7 +6,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "account-service",
+          "Host": "location-service",
           "Port": 8080
         }
       ],
@@ -21,7 +21,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "account-service",
+          "Host": "location-service",
           "Port": 8080
         }
       ],
@@ -36,7 +36,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "account-service",
+          "Host": "location-service",
           "Port": 8080
         }
       ],
@@ -51,7 +51,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "account-service",
+          "Host": "location-service",
           "Port": 8080
         }
       ],
@@ -66,7 +66,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "account-service",
+          "Host": "location-service",
           "Port": 8080
         }
       ],
@@ -81,7 +81,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "account-service",
+          "Host": "location-service",
           "Port": 8080
         }
       ],
@@ -96,7 +96,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "account-service",
+          "Host": "location-service",
           "Port": 8080
         }
       ],
@@ -111,7 +111,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "account-service",
+          "Host": "location-service",
           "Port": 8080
         }
       ],
