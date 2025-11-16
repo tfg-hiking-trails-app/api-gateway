@@ -28,7 +28,8 @@
       "DownstreamPathTemplate": "/api/country/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "location"
     },
     {
       "UpstreamPathTemplate": "/api/state/",
@@ -58,7 +59,8 @@
       "DownstreamPathTemplate": "/api/state/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "location"
     },
     {
       "UpstreamPathTemplate": "/api/state/country/{everything}/all/summary",
@@ -73,7 +75,8 @@
       "DownstreamPathTemplate": "/api/state/country/{everything}/all/summary",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "location"
     },
     {
       "UpstreamPathTemplate": "/api/city/",
@@ -103,7 +106,8 @@
       "DownstreamPathTemplate": "/api/city/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "location"
     },
     {
       "UpstreamPathTemplate": "/api/city/state/{everything}/all/summary",
@@ -118,7 +122,8 @@
       "DownstreamPathTemplate": "/api/city/state/{everything}/all/summary",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "location"
     }
   ]
 }

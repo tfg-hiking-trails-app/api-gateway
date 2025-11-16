@@ -13,7 +13,8 @@
       "DownstreamPathTemplate": "/api/activity-files/",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "hiking-trail"
     },
     {
       "UpstreamPathTemplate": "/api/hiking-trail/",
@@ -28,7 +29,8 @@
       "DownstreamPathTemplate": "/api/hiking-trail/",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "hiking-trail"
     },
     {
       "UpstreamPathTemplate": "/api/hiking-trail/account-codes",
@@ -58,7 +60,8 @@
       "DownstreamPathTemplate": "/api/hiking-trail/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "hiking-trail"
     },
     {
       "UpstreamPathTemplate": "/api/difficulty-level/",
@@ -73,7 +76,8 @@
       "DownstreamPathTemplate": "/api/difficulty-level/",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "hiking-trail"
     },
     {
       "UpstreamPathTemplate": "/api/difficulty-level/{everything}",
@@ -88,7 +92,8 @@
       "DownstreamPathTemplate": "/api/difficulty-level/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "hiking-trail"
     },
     {
       "UpstreamPathTemplate": "/api/metrics/",
@@ -103,7 +108,8 @@
       "DownstreamPathTemplate": "/api/metrics/",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "hiking-trail"
     },
     {
       "UpstreamPathTemplate": "/api/metrics/{everything}",
@@ -118,7 +124,8 @@
       "DownstreamPathTemplate": "/api/metrics/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "hiking-trail"
     },
     {
       "UpstreamPathTemplate": "/api/metrics-score/",
@@ -133,7 +140,8 @@
       "DownstreamPathTemplate": "/api/metrics-score/",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "hiking-trail"
     },
     {
       "UpstreamPathTemplate": "/api/metrics-score/{everything}",
@@ -148,7 +156,8 @@
       "DownstreamPathTemplate": "/api/metrics-score/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "hiking-trail"
     },
     {
       "UpstreamPathTemplate": "/api/terrain-type/",
@@ -163,7 +172,8 @@
       "DownstreamPathTemplate": "/api/terrain-type/",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "hiking-trail"
     },
     {
       "UpstreamPathTemplate": "/api/terrain-type/{everything}",
@@ -178,7 +188,8 @@
       "DownstreamPathTemplate": "/api/terrain-type/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "hiking-trail"
     },
     {
       "UpstreamPathTemplate": "/api/trail-type/",
@@ -193,7 +204,8 @@
       "DownstreamPathTemplate": "/api/trail-type/",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "hiking-trail"
     },
     {
       "UpstreamPathTemplate": "/api/trail-type/{everything}",
@@ -208,7 +220,8 @@
       "DownstreamPathTemplate": "/api/trail-type/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "hiking-trail"
     },
     {
       "UpstreamPathTemplate": "/api/hiking-trail/searcher",
@@ -250,7 +263,8 @@
       "DownstreamPathTemplate": "/api/images/",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "hiking-trail"
     },
     {
       "UpstreamPathTemplate": "/api/images/{everything}",
@@ -265,7 +279,8 @@
       "DownstreamPathTemplate": "/api/images/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "hiking-trail"
     },
     {
       "UpstreamPathTemplate": "/api/prestige/",
@@ -280,7 +295,8 @@
       "DownstreamPathTemplate": "/api/prestige/",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "hiking-trail"
     },
     {
       "UpstreamPathTemplate": "/api/prestige/{everything}",
@@ -295,7 +311,8 @@
       "DownstreamPathTemplate": "/api/prestige/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "hiking-trail"
     },
     {
       "UpstreamPathTemplate": "/api/comment/",
@@ -310,7 +327,8 @@
       "DownstreamPathTemplate": "/api/comment/",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "hiking-trail"
     },
     {
       "UpstreamPathTemplate": "/api/comment/{everything}",
@@ -325,7 +343,8 @@
       "DownstreamPathTemplate": "/api/comment/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "hiking-trail"
     }
   ]
 }

@@ -13,7 +13,8 @@
       "DownstreamPathTemplate": "/api/fit-file-data/file-id/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "fit-data"
     },
     {
       "UpstreamPathTemplate": "/api/fit-file-data/activity/{everything}",
@@ -28,7 +29,8 @@
       "DownstreamPathTemplate": "/api/fit-file-data/activity/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "fit-data"
     },
     {
       "UpstreamPathTemplate": "/api/fit-file-data/sessions/{everything}",
@@ -43,7 +45,8 @@
       "DownstreamPathTemplate": "/api/fit-file-data/sessions/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "fit-data"
     },
     {
       "UpstreamPathTemplate": "/api/fit-file-data/laps/{everything}",
@@ -58,7 +61,8 @@
       "DownstreamPathTemplate": "/api/fit-file-data/laps/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "fit-data"
     },
     {
       "UpstreamPathTemplate": "/api/fit-file-data/records/{everything}",
@@ -73,7 +77,8 @@
       "DownstreamPathTemplate": "/api/fit-file-data/records/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "fit-data"
     },
     {
       "UpstreamPathTemplate": "/api/fit-file-data/records/{everything}/{resource}",
@@ -88,7 +93,8 @@
       "DownstreamPathTemplate": "/api/fit-file-data/records/{everything}/{resource}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "fit-data"
     }
   ]
 }

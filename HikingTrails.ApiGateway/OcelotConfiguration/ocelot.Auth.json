@@ -10,7 +10,8 @@
           "Port": 8080
         }
       ],
-      "DownstreamPathTemplate": "/api/auth/login"
+      "DownstreamPathTemplate": "/api/auth/login",
+      "SwaggerKey": "auth"
     },
     {
       "UpstreamPathTemplate": "/api/auth/refresh",
@@ -22,7 +23,8 @@
           "Port": 8080
         }
       ],
-      "DownstreamPathTemplate": "/api/auth/refresh"
+      "DownstreamPathTemplate": "/api/auth/refresh",
+      "SwaggerKey": "auth"
     },
     {
       "UpstreamPathTemplate": "/api/auth/logout",
@@ -34,7 +36,8 @@
           "Port": 8080
         }
       ],
-      "DownstreamPathTemplate": "/api/auth/logout"
+      "DownstreamPathTemplate": "/api/auth/logout",
+      "SwaggerKey": "auth"
     },
     {
       "UpstreamPathTemplate": "/api/auth/edit/password",
@@ -49,7 +52,8 @@
       "DownstreamPathTemplate": "/api/auth/edit/password",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "auth"
     },
     {
       "UpstreamPathTemplate": "/api/auth/edit/username",
@@ -64,7 +68,8 @@
       "DownstreamPathTemplate": "/api/auth/edit/username",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "auth"
     }
   ]
 }

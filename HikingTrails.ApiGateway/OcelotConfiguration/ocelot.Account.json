@@ -13,7 +13,8 @@
       "DownstreamPathTemplate": "/api/gender/",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "account"
     },
     {
       "UpstreamPathTemplate": "/api/gender/{everything}",
@@ -28,7 +29,8 @@
       "DownstreamPathTemplate": "/api/gender/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "account"
     },
     {
       "UpstreamPathTemplate": "/api/account/",
@@ -43,7 +45,8 @@
       "DownstreamPathTemplate": "/api/account/",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "account"
     },
     {
       "UpstreamPathTemplate": "/api/account/{everything}",
@@ -58,8 +61,10 @@
       "DownstreamPathTemplate": "/api/account/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "account"
     },
+
     {
       "UpstreamPathTemplate": "/api/account-follow/",
       "UpstreamHttpMethod": [ "GET", "POST" ],
@@ -73,7 +78,8 @@
       "DownstreamPathTemplate": "/api/account-follow/",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "account"
     },
     {
       "UpstreamPathTemplate": "/api/account-follow/{everything}",
@@ -88,8 +94,10 @@
       "DownstreamPathTemplate": "/api/account-follow/{everything}",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
-      }
+      },
+      "SwaggerKey": "account"
     },
+
     {
       "UpstreamPathTemplate": "/api/account-follow/followers/{everything}",
       "UpstreamHttpMethod": [ "GET" ],

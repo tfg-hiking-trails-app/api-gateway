@@ -1,0 +1,54 @@
+﻿{
+  "SwaggerEndPoints": [
+    {
+      "Key": "hiking-trail",
+      "Config": [
+        {
+          "Name": "Hiking Trail API",
+          "Version": "v1",
+          "Url": "http://hiking-trail-service:8080/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "account",
+      "Config": [
+        {
+          "Name": "Account API",
+          "Version": "v1",
+          "Url": "http://account-service:8080/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "auth",
+      "Config": [
+        {
+          "Name": "Auth API",
+          "Version": "v1",
+          "Url": "http://auth-service:8080/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "fit-data",
+      "Config": [
+        {
+          "Name": "Fit Data API",
+          "Version": "v1",
+          "Url": "http://fit-data-service:8080/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "location",
+      "Config": [
+        {
+          "Name": "Location API",
+          "Version": "v1",
+          "Url": "http://location-service:8080/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}
