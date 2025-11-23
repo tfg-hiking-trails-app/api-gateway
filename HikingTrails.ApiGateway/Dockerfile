@@ -25,5 +25,8 @@ RUN dotnet publish "./HikingTrails.ApiGateway.csproj" -c $BUILD_CONFIGURATION -o
 # Esta fase se usa en producción o cuando se ejecuta desde VS en modo normal (valor predeterminado cuando no se usa la configuración de depuración)
 FROM base AS final
 WORKDIR /app
+USER 0
 COPY --from=publish /app/publish .
+RUN chown -R $APP_UID:$APP_UID /app
+USER $APP_UID
 ENTRYPOINT ["dotnet", "HikingTrails.ApiGateway.dll"]
