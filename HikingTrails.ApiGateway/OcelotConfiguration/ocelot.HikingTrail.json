@@ -252,7 +252,7 @@
     },
     {
       "UpstreamPathTemplate": "/api/hiking-trail/recommender",
-      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamHttpMethod": [ "POST" ],
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
