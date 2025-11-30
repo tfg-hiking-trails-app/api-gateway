@@ -144,6 +144,21 @@
       "SwaggerKey": "hiking-trail"
     },
     {
+      "UpstreamPathTemplate": "/api/metrics-score/account/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PUT" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/metrics-score/account/{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      }
+    },
+    {
       "UpstreamPathTemplate": "/api/metrics-score/{everything}",
       "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
       "DownstreamScheme": "http",
