@@ -1,6 +1,19 @@
 ﻿{
   "Routes": [
     {
+      "UpstreamPathTemplate": "/api/auth/register",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "auth-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/auth/register",
+      "SwaggerKey": "auth"
+    },
+    {
       "UpstreamPathTemplate": "/api/auth/login",
       "UpstreamHttpMethod": [ "POST" ],
       "DownstreamScheme": "http",
