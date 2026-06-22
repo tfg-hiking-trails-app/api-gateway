@@ -1,6 +1,22 @@
 {
   "Routes": [
     {
+      "UpstreamPathTemplate": "/api/fit-file-data/download/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "fit-data-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/fit-file-data/download/{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "SwaggerKey": "fit-data"
+    },
+    {
       "UpstreamPathTemplate": "/api/fit-file-data/file-id/{everything}",
       "UpstreamHttpMethod": [ "GET" ],
       "DownstreamScheme": "http",
