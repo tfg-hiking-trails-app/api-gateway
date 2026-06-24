@@ -266,6 +266,18 @@
       "DownstreamPathTemplate": "/api/hiking-trail/newest"
     },
     {
+      "UpstreamPathTemplate": "/api/hiking-trail/explore",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/hiking-trail/explore"
+    },
+    {
       "UpstreamPathTemplate": "/api/hiking-trail/recommender",
       "UpstreamHttpMethod": [ "POST" ],
       "DownstreamScheme": "http",
