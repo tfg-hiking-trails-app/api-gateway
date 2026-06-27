@@ -290,6 +290,22 @@
       "DownstreamPathTemplate": "/api/hiking-trail/recommender"
     },
     {
+      "UpstreamPathTemplate": "/api/hiking-trail/{code}/images",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/hiking-trail/{code}/images",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "SwaggerKey": "hiking-trail"
+    },
+    {
       "UpstreamPathTemplate": "/api/images/",
       "UpstreamHttpMethod": [ "GET", "POST" ],
       "DownstreamScheme": "http",
