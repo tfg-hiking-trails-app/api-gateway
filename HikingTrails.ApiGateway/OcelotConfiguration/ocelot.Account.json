@@ -97,6 +97,22 @@
       },
       "SwaggerKey": "account"
     },
+    {
+      "UpstreamPathTemplate": "/api/account-follow/follow/{everything}",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "account-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/account-follow/follow/{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "SwaggerKey": "account"
+    },
 
     {
       "UpstreamPathTemplate": "/api/account-follow/followers/{everything}",
