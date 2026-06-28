@@ -49,6 +49,22 @@
       "SwaggerKey": "account"
     },
     {
+      "UpstreamPathTemplate": "/api/account/by-codes",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "account-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/account/by-codes",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "SwaggerKey": "account"
+    },
+    {
       "UpstreamPathTemplate": "/api/account/{everything}",
       "UpstreamHttpMethod": [ "GET", "PUT" ],
       "DownstreamScheme": "http",
