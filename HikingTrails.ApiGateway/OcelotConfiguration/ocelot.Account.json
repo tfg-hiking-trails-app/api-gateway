@@ -65,6 +65,22 @@
       "SwaggerKey": "account"
     },
     {
+      "UpstreamPathTemplate": "/api/account/logged/profile-picture",
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "account-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/account/logged/profile-picture",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "SwaggerKey": "account"
+    },
+    {
       "UpstreamPathTemplate": "/api/account/{everything}",
       "UpstreamHttpMethod": [ "GET", "PUT" ],
       "DownstreamScheme": "http",
