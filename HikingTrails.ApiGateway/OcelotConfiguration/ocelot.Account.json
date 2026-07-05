@@ -81,6 +81,30 @@
       "SwaggerKey": "account"
     },
     {
+      "UpstreamPathTemplate": "/api/account/public/searcher",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "account-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/account/public/searcher"
+    },
+    {
+      "UpstreamPathTemplate": "/api/account/public/{code}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "account-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/account/public/{code}"
+    },
+    {
       "UpstreamPathTemplate": "/api/account/{everything}",
       "UpstreamHttpMethod": [ "GET", "PUT" ],
       "DownstreamScheme": "http",
@@ -250,6 +274,30 @@
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
       }
+    },
+    {
+      "UpstreamPathTemplate": "/api/account-follow/public/followers/{accountCode}/count",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "account-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/account-follow/public/followers/{accountCode}/count"
+    },
+    {
+      "UpstreamPathTemplate": "/api/account-follow/public/followed/{accountCode}/count",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "account-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/account-follow/public/followed/{accountCode}/count"
     }
   ]
 }

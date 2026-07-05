@@ -48,6 +48,54 @@
       }
     },
     {
+      "UpstreamPathTemplate": "/api/hiking-trail/public/explore",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/hiking-trail/public/explore"
+    },
+    {
+      "UpstreamPathTemplate": "/api/hiking-trail/public/account-codes",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/hiking-trail/public/account-codes"
+    },
+    {
+      "UpstreamPathTemplate": "/api/hiking-trail/public/searcher",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/hiking-trail/public/searcher"
+    },
+    {
+      "UpstreamPathTemplate": "/api/hiking-trail/public/{code}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hiking-trail-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/hiking-trail/public/{code}"
+    },
+    {
       "UpstreamPathTemplate": "/api/hiking-trail/{everything}",
       "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
       "DownstreamScheme": "http",

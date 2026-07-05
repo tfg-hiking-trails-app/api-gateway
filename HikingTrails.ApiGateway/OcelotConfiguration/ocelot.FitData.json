@@ -97,6 +97,18 @@
       "SwaggerKey": "fit-data"
     },
     {
+      "UpstreamPathTemplate": "/api/fit-file-data/public/records/{hikingTrailCode}/coordinates",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "fit-data-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/fit-file-data/public/records/{hikingTrailCode}/coordinates"
+    },
+    {
       "UpstreamPathTemplate": "/api/fit-file-data/records/{everything}/{resource}",
       "UpstreamHttpMethod": [ "GET" ],
       "DownstreamScheme": "http",
