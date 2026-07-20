@@ -83,6 +83,22 @@
         "AuthenticationProviderKey": "Bearer"
       },
       "SwaggerKey": "auth"
+    },
+    {
+      "UpstreamPathTemplate": "/api/auth/account",
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "auth-service",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/auth/account",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "SwaggerKey": "auth"
     }
   ]
 }
